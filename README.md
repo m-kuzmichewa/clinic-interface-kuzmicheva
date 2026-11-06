@@ -14,4 +14,4 @@
 - **Сохранение:** данные не пропадают при перезагрузке страницы благодаря `localStorage`.
 
 ## Ссылка на репозиторий
-https://github.com/m-kuzmicheva/clinic-interface-kuzmicheva
+https://github.com/m-kuzmichewa/clinic-interface-kuzmicheva
