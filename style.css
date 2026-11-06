@@ -1,0 +1,110 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #f5f5f0;
+    color: #1a1a1a;
+}
+
+h1 { 
+    font-size: 1.5rem; 
+    margin-bottom: 1.25rem; 
+    text-align: center;
+}
+
+h2 { 
+    font-size: 1.1rem; 
+    margin: 0 0 0.75rem; 
+    color: #333;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Стили для полей ввода и выпадающего списка */
+input, select {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fafafa;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1f3da8;
+    background-color: #fff;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background: #1f3da8;
+    color: #fff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover { 
+    background: #162d7a; 
+}
+
+.message { 
+    color: #2e7d32; 
+    margin-top: 0.5rem; 
+    font-weight: 500; 
+}
+
+.hint { 
+    color: #888; 
+    font-style: italic; 
+}
+
+/* Стили для таблицы результатов */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+.results-table tr:nth-child(even) {
+    background-color: #fafafa;
+}

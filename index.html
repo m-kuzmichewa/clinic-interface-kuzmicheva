@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись пациентов на приём</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Запись пациентов на приём</h1>
+
+    <!-- Форма добавления -->
+    <section class="card">
+        <h2>Добавить запись</h2>
+        <form id="add-form">
+            <label>Фамилия
+                <input type="text" name="lastName" required placeholder="Иванов">
+            </label>
+            <label>Имя
+                <input type="text" name="firstName" required placeholder="Иван">
+            </label>
+            <label>Отчество
+                <input type="text" name="middleName" placeholder="Иванович">
+            </label>
+            <label>Специальность врача
+                <select name="specialty" required>
+                    <option value="">-- Выберите --</option>
+                    <option value="Терапевт">Терапевт</option>
+                    <option value="Кардиолог">Кардиолог</option>
+                    <option value="Невролог">Невролог</option>
+                    <option value="Хирург">Хирург</option>
+                    <option value="Окулист">Окулист</option>
+                </select>
+            </label>
+            <label>Номер кабинета
+                <input type="number" name="cabinet" required placeholder="205">
+            </label>
+            <label>Время приёма
+                <input type="time" name="time" required>
+            </label>
+            <button type="submit">Добавить запись</button>
+        </form>
+        <p id="add-message" class="message" hidden></p>
+    </section>
+
+    <!-- Экспорт CSV -->
+    <section class="card">
+        <button type="button" id="download-csv">Скачать CSV</button>
+    </section>
+
+    <!-- Форма поиска -->
+    <section class="card">
+        <h2>Поиск</h2>
+        <form id="search-form">
+            <label>Введите ФИО или специальность
+                <input type="text" name="query" required placeholder="Иванов или Кардиолог">
+            </label>
+            <button type="submit">Найти</button>
+        </form>
+    </section>
+
+    <!-- Результаты поиска (таблица) -->
+    <section class="card">
+        <h2>Результаты</h2>
+        <div id="results">
+            <p class="hint">Введите запрос и нажмите «Найти»</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
